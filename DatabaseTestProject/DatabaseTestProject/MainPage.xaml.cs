@@ -25,7 +25,7 @@ namespace DatabaseTestProject
 
         private async void ViewPageButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync();
+            await Navigation.PushAsync(new QuestionIndexPage());
         }
     }
 }

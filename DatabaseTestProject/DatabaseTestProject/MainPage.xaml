@@ -4,15 +4,6 @@
              x:Class="DatabaseTestProject.MainPage">
 
     <StackLayout>
-        <ListView x:Name="QuestionListView">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <Label Text="{Binding QuestionBody}"/>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
         <Button x:Name="ViewPageButton" Text="View" Clicked="ViewPageButton_Clicked"/>
         <Button x:Name="AddPageButton" Text="Add" Clicked="AddPageButton_Clicked"/>
     </StackLayout>
