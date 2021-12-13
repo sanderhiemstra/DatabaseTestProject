@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using DatabaseTestProject.Data;
 
 namespace DatabaseTestProject
 {
@@ -13,11 +14,18 @@ namespace DatabaseTestProject
         public MainPage()
         {
             InitializeComponent();
+            
         }
+
 
         private async void AddPageButton_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new AddQuestionPage());
+        }
+
+        private async void ViewPageButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync();
         }
     }
 }
